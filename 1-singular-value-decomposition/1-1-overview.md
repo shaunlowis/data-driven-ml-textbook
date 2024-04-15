@@ -1,0 +1,52 @@
+# Overview
+
+- The SVD is a matrix decomposition. 
+- It determines a low-dimensional approximation to high-dimensional data in terms of dominant patterns.
+- It is numerically stable, guaranteed to exist and represents dominant correlations in the data.
+- The coordinate system of the SVD is in terms of the aforementioned data correlations. 
+- It can be used to find the pseudo-inverse of non-square matrices and solutions to $Ax = b$.
+
+## Definition
+
+Let a large data set 
+
+$$
+X \in \mathbb{C}^{n\times m} \\ 
+$$
+
+Where columns $x_k \in \mathbb{C}^n$ are: 
+
+$$
+X = 
+
+\begin{bmatrix}
+| & | & | & |\\
+x_1 & x_2 & ... & x_m\\
+| & | & | & |
+\end{bmatrix}
+
+$$
+
+Where the columns denote vectors, which can be from time series or other data. Hence their rows contain degrees of freedom or measurements.
+
+The decomposition exists for every complex-valued matrix:
+
+$$
+X = U \Sigma V^* \\
+
+\text{where: } U \in \mathbb{C}^{n\times n}, \\
+
+V \in \mathbb{C}^{m\times m}, \\
+
+Sigma \in \mathbb{R}^{n\times m}
+$$
+
+And U, V are unitary, satisfying 
+
+$$
+
+UU^* = U^*U = I
+
+$$
+
+for $^*$ denoting the conjugate transpose and $\Sigma$ as real with non-negative diagonals and zeroes elsewhere.
