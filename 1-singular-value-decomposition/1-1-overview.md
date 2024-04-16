@@ -50,3 +50,44 @@ UU^* = U^*U = I
 $$
 
 for $^*$ denoting the conjugate transpose and $\Sigma$ as real with non-negative diagonals and zeroes elsewhere.
+
+When $n \ge m$, the matrix $\Sigma$ has at most $m$ non-zero diagonal elements; take the $n=1, m=2$ case of:
+
+$$
+\Sigma = 
+
+\begin{bmatrix}
+\hat \Sigma \\
+0
+\end{bmatrix}
+$$
+
+so substituting, we get the economy SVD;
+
+$$
+X = U \Sigma V^* = 
+
+\begin{bmatrix}
+\hat U & \hat U^{\perp}
+\end{bmatrix}
+
+\begin{bmatrix}
+\hat \Sigma \\
+0
+\end{bmatrix}
+
+ V^* = \hat U \hat \Sigma V^*
+$$
+
+## Computation
+The exact solution method for computing the SVD is not too important. Here is a python
+implementation:
+
+```
+import numpy as np
+X = np.random.rand(5, 3) # create random data matrix.
+U, X, VT = np.linalg.svd(X, full_matrices=True) # Full SVD.
+Uhat, Shat, VThat = np.linalg.svd(X, full_matrices=False) # Economy SVD
+```
+
+We will use the SVD for dimensionality reduction extensively.
