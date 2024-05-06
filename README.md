@@ -6,5 +6,13 @@ I will create a folder per section. My goal is to get to section 14, physics-inf
 
 The accompanying website for the textbook is [here](https://databookuw.com/). 
 
-Each folder will contain a markdown file named like: `1-1-overview.md`, referring to the sub-section.
-The folders themselves will be named after the chapter headings.
+Planned contents:
+- Section 1: Singular Value Decomposition: 1.1-2, 1.5, 1.7, 1.9
+- Section 2: Fourier and Wavelet Transforms: 2.1-2.5
+- Section 5: Clustering and Classification.
+- Section 6: Neural Networks and Deep Learning.
+- Section 12: Reduced-Order Models.
+- Section 13: Interpolation for Parametric Reduced-Order Models.
+- Section 14: Physics-Informed Machine Learning.
+
+The above sections are subject to change; for now sections on control theory is skipped.
