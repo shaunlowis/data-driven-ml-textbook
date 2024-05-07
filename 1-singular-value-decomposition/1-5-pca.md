@@ -10,18 +10,16 @@ Let a matrix $X$ (of $n \times m$) contain features as columns and observations 
 
 The mean, $\bar x$ is:
 
-$$\begin{align}\bar x_j = \frac{1}{n} \sum^{n}_{i=1} X_{ij}\end{align}$$
+$\begin{align}\bar x_j = \frac{1}{n} \sum^{n}_{i=1} X_{ij}\end{align}$
 
 The mean matrix is:
 
 $$\begin{align}\bar X = 
-
 \begin{bmatrix}
 1 \\
 ... \\
 1 \\
 \end{bmatrix}
-
 \bar x\end{align}$$
 
 Where the matrix above is the matrix of ones. I found this notation confusing, [here](https://math.stackexchange.com/questions/3507918/subtracting-the-mean-from-every-row-of-a-matrix) is a good derivation of why the above operation works.

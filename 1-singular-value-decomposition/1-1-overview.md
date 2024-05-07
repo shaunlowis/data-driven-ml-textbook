@@ -15,7 +15,6 @@ $$X \in \mathbb{C}^{n\times m} \\$$
 Where columns $x_k \in \mathbb{C}^n$ are: 
 
 $$X = 
-
 \begin{bmatrix}
 | & | & | & |\\
 x_1 & x_2 & ... & x_m\\
@@ -27,11 +26,8 @@ Where the columns denote vectors, which can be from time series or other data. H
 The decomposition exists for every complex-valued matrix:
 
 $$X = U \Sigma V^* \\
-
 \text{where: } U \in \mathbb{C}^{n\times n}, \\
-
 V \in \mathbb{C}^{m\times m}, \\
-
 Sigma \in \mathbb{R}^{n\times m}$$
 
 And U, V are unitary, satisfying 
@@ -44,7 +40,6 @@ When $n \ge m$, the matrix $\Sigma$ has at most $m$ non-zero diagonal elements; 
 
 $$\begin{align}
 \Sigma = 
-
 \begin{bmatrix}
 \hat \Sigma \\
 0
@@ -55,19 +50,15 @@ so substituting, we get the economy SVD;
 
 $$\begin{align}
 X &= U \Sigma V^* \\
-
 &= 
 \begin{bmatrix}
 \hat U & \hat U^{\perp}
 \end{bmatrix}
-
 \begin{bmatrix}
 \hat \Sigma \\
 0
 \end{bmatrix}
-
  V^* \\
-
 &= \hat U \hat \Sigma V^*
 \end{align}$$
 
