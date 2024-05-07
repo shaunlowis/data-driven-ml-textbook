@@ -10,7 +10,7 @@
 
 Let a large data set 
 
-$$X \in \mathbb{C}^{n\times m} \\$$
+$$X \in \mathbb{C}^{n\times m}$$
 
 Where columns $x_k \in \mathbb{C}^n$ are: 
 

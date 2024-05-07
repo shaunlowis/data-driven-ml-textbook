@@ -10,7 +10,7 @@ Let a matrix $X$ (of $n \times m$) contain features as columns and observations 
 
 The mean, $\bar x$ is:
 
-$\begin{align}\bar x_j = \frac{1}{n} \sum^{n}_{i=1} X_{ij}\end{align}$
+$$\begin{align}\bar x_j = \frac{1}{n} \sum^{n}_{i=1} X_{ij}\end{align}$$
 
 The mean matrix is:
 
