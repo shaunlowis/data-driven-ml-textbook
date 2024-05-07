@@ -10,63 +10,53 @@
 
 Let a large data set 
 
-$$
-X \in \mathbb{C}^{n\times m} \\ 
-$$
+$$X \in \mathbb{C}^{n\times m} \\$$
 
 Where columns $x_k \in \mathbb{C}^n$ are: 
 
-$$
-X = 
+$$X = 
 
 \begin{bmatrix}
 | & | & | & |\\
 x_1 & x_2 & ... & x_m\\
 | & | & | & |
-\end{bmatrix}
-
-$$
+\end{bmatrix}$$
 
 Where the columns denote vectors, which can be from time series or other data. Hence their rows contain degrees of freedom or measurements.
 
 The decomposition exists for every complex-valued matrix:
 
-$$
-X = U \Sigma V^* \\
+$$X = U \Sigma V^* \\
 
 \text{where: } U \in \mathbb{C}^{n\times n}, \\
 
 V \in \mathbb{C}^{m\times m}, \\
 
-Sigma \in \mathbb{R}^{n\times m}
-$$
+Sigma \in \mathbb{R}^{n\times m}$$
 
 And U, V are unitary, satisfying 
 
-$$
-
-UU^* = U^*U = I
-
-$$
+$$UU^* = U^*U = I$$
 
 for $^*$ denoting the conjugate transpose and $\Sigma$ as real with non-negative diagonals and zeroes elsewhere.
 
 When $n \ge m$, the matrix $\Sigma$ has at most $m$ non-zero diagonal elements; take the $n=1, m=2$ case of:
 
-$$
+$$\begin{align}
 \Sigma = 
 
 \begin{bmatrix}
 \hat \Sigma \\
 0
 \end{bmatrix}
-$$
+\end{align}$$
 
 so substituting, we get the economy SVD;
 
-$$
-X = U \Sigma V^* = 
+$$\begin{align}
+X &= U \Sigma V^* \\
 
+&= 
 \begin{bmatrix}
 \hat U & \hat U^{\perp}
 \end{bmatrix}
@@ -76,8 +66,10 @@ X = U \Sigma V^* =
 0
 \end{bmatrix}
 
- V^* = \hat U \hat \Sigma V^*
-$$
+ V^* \\
+
+&= \hat U \hat \Sigma V^*
+\end{align}$$
 
 ## Computation
 The exact solution method for computing the SVD is not too important. Here is a python
