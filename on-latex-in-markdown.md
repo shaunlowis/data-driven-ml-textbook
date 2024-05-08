@@ -27,7 +27,8 @@ c*Ax &= c*B \\
 Note: don't leave space between the '$$' delimiters and the expression.
 ```
 
-$$\begin{align}Ax &= B \\
+$$\begin{align}
+Ax &= B \\
 c*Ax &= c*B \\
 \end{align}$$
 
